@@ -1,0 +1,186 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    font-family: "Inter", sans-serif; 
+    line-height: 16px;
+    font-size: 11px;
+    color: rgb(101, 101, 101)
+}
+.main{
+    position: fixed;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90vw;
+    background-color: #d9d2e4;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.right > img{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+.left{
+    width: 50%;
+    z-index: 999;
+    border-radius: 22px 0px 0px 22px;
+    background-color: #fcfeff !important;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 70px;
+    line-height:25px
+}
+.content>img{
+    width: fit-content !important;
+    align-self: center;
+}
+.content> h2{
+    align-self: center;
+font-weight: 700;}
+
+
+.inputfield {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 14px;
+    height:44px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.inputfield > input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.inputfield > span {
+    margin-top: 6px;
+
+}
+.inputfield > span > img{
+    padding: 0px 4px 0px 10px ;
+    height: 15px;
+    width: 15px;
+}
+br {
+    display: none; 
+}
+label{
+    text-align: left;
+}
+button{
+    margin-top: 20px;
+    background-color:  #583896;
+    color: #fcfeff;
+    border-radius: 14px 8px 14px 8px;
+    border: 1px solid #583896;
+    font-weight: bolder;
+    height:44px;
+    cursor: pointer;
+    
+}
+.content> h3{
+    color: #dae0e5;
+    text-align: center;
+}
+.social_icons{
+    display: flex;
+    justify-content: center;
+   
+}
+.social_icons > img{
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.25em;
+    margin: 0px 4px;
+    border-radius: 50px;
+    border: 1px solid #dae0e5 ;
+}
+h5{
+    align-self: center;
+}
+h5> span{
+    color: #583896;
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .main {
+        flex-direction: column; 
+        height: auto; 
+        margin-top: 100px;
+    }
+
+    
+    .right, .left {
+        width: 100%; 
+        border: 0;
+        border-radius: 0;
+        background-color: #fcfeff; 
+    }
+
+    .right > img {
+        max-width: 50%; 
+        height: auto; 
+        margin: auto; 
+    }
+
+    .left {
+        border-radius: 0; 
+    }
+
+    .left > img {
+        width: 100%; 
+        height: auto;
+    }
+    .inputfield {
+        
+        border-radius: 20px;
+       
+    }
+    .content{
+        margin: 40px;
+        font-size: 14px;
+
+    }
+
+    .content > button {
+        border-radius: 20px;
+        margin-top: 10px; 
+    }
+    .logo-image {
+        position: absolute;
+        top: -70px;
+        width: 100%; 
+        max-width: 200px; 
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
